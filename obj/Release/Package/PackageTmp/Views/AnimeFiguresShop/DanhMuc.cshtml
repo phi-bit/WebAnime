@@ -1,0 +1,8 @@
+﻿@model IEnumerable<WebAnime.Models.DanhMuc> 
+
+@foreach (var item in Model)
+{
+    <a href="@Url.Action("SPTheodanhmuc", "AnimeFiguresShop", new { id = item.MaDM })" class="list-group-item">
+        @item.TenDM
+    </a>
+}

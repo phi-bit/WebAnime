@@ -1,0 +1,39 @@
+﻿@model IEnumerable<WebAnime.Models.DanhMuc>
+
+@{
+    ViewBag.Title = "DanhMuc";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Thông Tin Danh Mục</h2>
+
+<p>
+    @Html.ActionLink("THÊM MỚI", "Themmoidanhmuc")
+</p>
+<table class="table">
+    <tr>
+        <th>  Tên danh mục </th>
+        <th>  Địa chỉ </th>
+        <th>  Điện thoại </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.TenDM)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Diachi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dienthoai)
+        </td>
+        <td>
+            @Html.ActionLink("Sửa", "Suadanhmuc", new { id=item.MaDM }) |
+            @Html.ActionLink("Chi tiết", "Chitietdanhmuc", new { id=item.MaDM }) |
+            @Html.ActionLink("Xóa", "Xoadanhmuc", new { id=item.MaDM })
+        </td>
+    </tr>
+}
+
+</table>

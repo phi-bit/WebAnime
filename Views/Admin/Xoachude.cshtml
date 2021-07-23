@@ -1,0 +1,40 @@
+﻿@model WebAnime.Models.ChuDe
+
+@{
+    ViewBag.Title = "Xoachude";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>XÁC NHẬN THÔNG TIN CHỦ ĐỀ CẦN XÓA</h2>
+
+<div>
+    <h4> Bạn quyết định xóa chủ đề này?</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Mã chủ đề:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MaCD)
+        </dd>
+
+        <dt>
+            Tên chủ đề:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenchude)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("Trở về", "ChuDe")
+        </div>
+    }
+</div>

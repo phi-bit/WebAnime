@@ -1,0 +1,42 @@
+﻿@model IEnumerable<WebAnime.Models.MoHinh>
+@{
+    ViewBag.Title = "SPTheodanhmuc";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h3 style="text-align:center; color: red">Mô Hình Theo Danh Mục</h3>
+
+<div class="row">
+   @foreach (var mohinh in Model) 
+   {
+       <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/@mohinh.Anhbia" width="200" />
+
+                    <div>
+       
+                        <h5 style="text-align:center">
+                            @mohinh.Tenmohinh
+                        </h5>
+                        <p>
+                          
+
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        
+    }
+</div>

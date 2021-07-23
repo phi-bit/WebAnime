@@ -1,0 +1,158 @@
+﻿@model IEnumerable<WebAnime.Models.MoHinh>
+@{
+    ViewBag.Title = "SPTheochude";
+    Layout = "~/Views/Shared/_LayoutUser.cshtml";
+}
+
+<h3 style="Text-align:Center; color: red">Mô Hình Theo Chủ Đề</h3>
+
+<div class="row">
+    @foreach (var mohinh in Model)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Details", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/images/@mohinh.Anhbia" width="200" />
+
+                    <div class="caption">
+                        <h5 class="pull-right">135,000VNĐ</h5>
+                        <h5 style="text-align:center">
+                            @mohinh.Tenmohinh
+                        </h5>
+                        <p>
+                            Nhân vật: Black Panther,
+                            Phim: Captain America: Civil War,
+                            Cao khoảng 10cm,
+                            Nhựa PVC.
+
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">15 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Detail", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/images/@mohinh.Anhbia" width="200" />
+                    <div class="caption">
+                        <h5 class="pull-right">110,000VNĐ</h5>
+                        <h5>
+                            <a href="#">Deadpool</a>
+                        </h5>
+                        <p>
+                            Nhân vật: Deadpool,
+                            Phim: Deadpool,
+                            Cao khoảng 10cm,
+                            Nhựa PVC.
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">12 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Detail", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/images/@mohinh.Anhbia" width="200" />
+                    <div class="caption">
+                        <h5 class="pull-right">290,000 VNĐ</h5>
+                        <h5>
+                            <a href="#">Goku</a>
+                        </h5>
+                        <p>
+                            Nhân vật: Goku,
+                            Anime/Manga: Dragon Ball – 7 Viên Ngọc Rồng,
+                            Cao khoảng 32cm,
+                            Nhựa PVC.
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">31 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Detail", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/images/@mohinh.Anhbia" width="200" />
+                    <div class="caption">
+                        <h5 class="pull-right">435,000 VNĐ</h5>
+                        <h5>
+                            <a href="#">Naruto</a>
+                        </h5>
+                        <p>
+                            Nhân vật: Naruto Uzumaki,
+                            Anime/Manga: Naruto Shippuden,
+                            Cao khoảng 29cm,
+                            Nhựa PVC.
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">6 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="thumbnail">
+                <a href="@Url.Action("Detail", "AnimeFiguresShop", new { id = mohinh.Mamohinh})">
+                    <img alt="@mohinh.Tenmohinh" src="~/images/@mohinh.Anhbia" width="200" />
+                    <div class="caption">
+                        <h5 class="pull-right">220,000 VNĐ</h5>
+                        <h5>
+                            <a href="#">Ace</a>
+                        </h5>
+                        <p>
+                            Nhân vật: Portgas D Ace
+                            Anime/Manga: One Piece
+                            Cao khoảng 13cm
+                            Nhựa PVC.
+                        </p>
+                    </div>
+                    <div class="ratings">
+                        <p class="pull-right">18 reviews</p>
+                        <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                        </p>
+                    </div>
+            </div>
+        </div>
+    }
+</div>

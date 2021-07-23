@@ -1,0 +1,42 @@
+﻿@model WebAnime.Models.DanhMuc
+
+@{
+    ViewBag.Title = "Chitietdanhmuc";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Chi Tiết Danh Mục </h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên danh mục:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TenDM)
+        </dd>
+
+        <dt>
+            Địa chỉ:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Diachi)
+        </dd>
+
+        <dt>
+            Điện thoại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Dienthoai)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Sửa", "Suadanhmuc", new { id = Model.MaDM }) |
+    @Html.ActionLink("VỀ TRANG QUẢN LÝ DANH MỤC", "DanhMuc")
+</p>

@@ -1,0 +1,93 @@
+﻿@model WebAnime.Models.MoHinh
+
+@{
+    ViewBag.Title = "Chitietmohinh";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>THÔNG TIN CHI TIẾT MÔ HÌNH</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Tên sách:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tenmohinh)
+        </dd>
+
+        <dt>
+            Giá bán:
+        </dt>
+
+        <dd>
+            @String.Format("{0:0,0}", Model.Giaban) VNĐ
+        </dd>
+
+        <dt>
+            Mô tả:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Mota)
+        </dd>
+
+        <dt>
+            Ảnh bìa:
+        </dt>
+
+        <dd>
+            <img src="@Url.Content("~/"+  Model.Anhbia)" width="120" />
+        </dd>
+
+        <dt>
+            Ngày cập nhất:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaycapnhat)
+        </dd>
+
+        <dt>
+            Số lượng tồn:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Soluongton)
+        </dd>
+
+        <dt>
+            Chủ đề:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ChuDe.MaCD)
+        </dd>
+
+        <dt>
+            Loại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CTMoHinh.Loai)
+        </dd>
+
+        <dt>
+            Danh mục:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DanhMuc.MaDM)
+        </dd>
+
+    </dl>
+</div>
+
+<div>
+<p>
+    @Html.ActionLink("ĐIỀU CHỈNH", "Suamohinh", new { id = Model.Mamohinh }) |
+    @Html.ActionLink("TRỞ VỀ", "Mohinh")
+</p>
+</div>

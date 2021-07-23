@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="dbwebmohinh">
+  <DataContextMoniker Name="/dbwebmohinhDataContext" />
+  <nestedChildShapes>
+    <classShape Id="1d9e6222-9b89-46a1-8bd7-52381352e533" absoluteBounds="6.75, 6.25, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/Admin" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d2913586-cd60-486b-b542-e0601dd8f6c9" absoluteBounds="6.7650000000000006, 6.71, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="97c6a0bc-7874-42c1-ab32-756b865f0d62" absoluteBounds="0.75, 1.75, 2, 1.1939925130208335">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/ChuDe" />
+      <nestedChildShapes>
+        <elementListCompartment Id="480bb3ea-d603-407a-8ebd-a1ff5efd4cde" absoluteBounds="0.765, 2.21, 1.9700000000000002, 0.63399251302083326" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="f0a8a495-07fe-4ce6-a4bc-4d89405171b0" absoluteBounds="6.25, 1.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/CTDatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1e2ee767-99a9-43b3-a1e7-0814d99a53e3" absoluteBounds="6.265, 1.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="289b90d7-5368-400d-8011-5cb9fce16192" absoluteBounds="0.5, 3.625, 2, 1.3862939453125005">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/CTMoHinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e9772938-6cc2-47f0-bd20-0407a2251cd1" absoluteBounds="0.515, 4.085, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="6a2e23fa-49d5-4eaa-9d0e-d9ffc8efa665" absoluteBounds="0.5, 5.625, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/DanhMuc" />
+      <nestedChildShapes>
+        <elementListCompartment Id="9b40235e-d334-44b5-901b-4a4b9d4ede14" absoluteBounds="0.51500000000000012, 6.0850000000000009, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="12076349-1806-43f4-a20c-f447f87de76e" absoluteBounds="6.375, 3.75, 2, 1.9631982421874987">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/DonDatHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="73b0dbc5-1c53-4a31-bb3e-b9310bd2bc11" absoluteBounds="6.3900000000000006, 4.2100000000000009, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="a51ae5e4-536f-4045-ae43-a0f6a3953a4f" absoluteBounds="3.5, 5.75, 2, 2.3478011067708344">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/KhachHang" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1b368abc-de3a-4bd2-ad63-be10552bf617" absoluteBounds="3.5150000000000006, 6.2100000000000009, 1.9700000000000002, 1.7878011067708335" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="fde0f097-9196-4eaf-8bc1-427378eb0e38" absoluteBounds="3.5, 1, 2, 2.7324039713541666">
+      <DataClassMoniker Name="/dbwebmohinhDataContext/MoHinh" />
+      <nestedChildShapes>
+        <elementListCompartment Id="e5c19103-362b-49de-9e88-9234ef1a5eb0" absoluteBounds="3.515, 1.46, 1.9700000000000002, 2.1724039713541665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(7.3125 : 3.75); (7.3125 : 3.07859537760417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/DonDatHang/DonDatHang_CTDatHang" />
+      <nodes>
+        <classShapeMoniker Id="12076349-1806-43f4-a20c-f447f87de76e" />
+        <classShapeMoniker Id="f0a8a495-07fe-4ce6-a4bc-4d89405171b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 5.96875); (6.53125 : 5.96875); (6.53125 : 5.7131982421875)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/KhachHang/KhachHang_DonDatHang" />
+      <nodes>
+        <classShapeMoniker Id="a51ae5e4-536f-4045-ae43-a0f6a3953a4f" />
+        <classShapeMoniker Id="12076349-1806-43f4-a20c-f447f87de76e" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(5.5 : 2.28929768880208); (6.25 : 2.28929768880208)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/MoHinh/MoHinh_CTDatHang" />
+      <nodes>
+        <classShapeMoniker Id="fde0f097-9196-4eaf-8bc1-427378eb0e38" />
+        <classShapeMoniker Id="f0a8a495-07fe-4ce6-a4bc-4d89405171b0" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.75 : 2.34699625651042); (3.5 : 2.34699625651042)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/ChuDe/ChuDe_MoHinh" />
+      <nodes>
+        <classShapeMoniker Id="97c6a0bc-7874-42c1-ab32-756b865f0d62" />
+        <classShapeMoniker Id="fde0f097-9196-4eaf-8bc1-427378eb0e38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 4.40310145833333); (3.92838404166667 : 4.40310145833333 : JumpStart); (4.09505070833333 : 4.40310145833333 : JumpEnd); (4.58593875 : 4.40310145833333); (4.58593875 : 3.73240397135417)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/CTMoHinh/CTMoHinh_MoHinh" />
+      <nodes>
+        <classShapeMoniker Id="289b90d7-5368-400d-8011-5cb9fce16192" />
+        <classShapeMoniker Id="fde0f097-9196-4eaf-8bc1-427378eb0e38" />
+      </nodes>
+    </associationConnector>
+    <associationConnector edgePoints="[(2.5 : 5.62621330413662); (2.87621330413662 : 5.25); (4.011717375 : 5.25); (4.011717375 : 3.73240397135417)]" fixedFrom="NotFixed" fixedTo="Algorithm">
+      <AssociationMoniker Name="/dbwebmohinhDataContext/DanhMuc/DanhMuc_MoHinh" />
+      <nodes>
+        <classShapeMoniker Id="6a2e23fa-49d5-4eaa-9d0e-d9ffc8efa665" />
+        <classShapeMoniker Id="fde0f097-9196-4eaf-8bc1-427378eb0e38" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
