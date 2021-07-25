@@ -54,6 +54,9 @@
                     <li>
                         @Html.Action("GiohangPartial", "Giohang")
                     </li>
+                    <li>
+                        <a href="@Url.Action("About","Home")">Liên Hệ</a>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
@@ -69,11 +72,11 @@
             <div class="col-md-3">
                 <p class="lead">Danh Mục</p>
                 @Html.Action("DanhMuc", "AnimeFiguresShop")
-                
+
 
                 <p class="lead">Chủ Đề</p>
                 @Html.Action("ChuDe", "AnimeFiguresShop")
-                
+
 
 
             </div>
@@ -91,13 +94,16 @@
                             </ol>
                             <div class="carousel-inner">
                                 <div class="item active">
-                                    <img class="slide-image" src="~/images/Banner/eyes.jpg" alt="hinh1"/>
+                                    <img class="slide-image" src="~/images/Banner/eyes.jpg" alt="hinh1" />
+                                    <h3>Thời gian làm việc: từ 9:00 AM - 8:00 PM</h3>
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="~/images/Banner/temple.jpg" alt="hinh2"/>
+                                    <img class="slide-image" src="~/images/Banner/temple.jpg" alt="hinh2" />
+                                    <h3>Điện thoại: 0916446984</h3>
                                 </div>
                                 <div class="item">
-                                    <img class="slide-image" src="~/images/Banner/templetree.jpg" alt="hinh3"/>
+                                    <img class="slide-image" src="~/images/Banner/templetree.jpg" alt="hinh3" />
+                                    <h3>ahhhawbh</h3>
                                 </div>
                             </div>
                             <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
@@ -113,7 +119,9 @@
 
                 <h3 style="text-align:center; color:red">Anime Figures Shop</h3>
                 <div>
+
                     @RenderBody()
+
                 </div>
 
 
@@ -130,9 +138,32 @@
         <footer>
             <div class="row">
                 <div class="col-lg-12">
-                    <p>Nguyễn Hoàng Phi
-                       Email: nphi172@gmail.com
-                    </p>
+                    <ul>
+                        <li>
+                            <i class="far fa-dot-circle-o">
+                            </i>
+                            <strong>Địa chỉ:</strong>
+                            <span>146A Phan Văn Trị, phường 12, quận Bình Thành, TP.HCM</span>
+                        </li>
+                        <li>
+                            <i class="far fa-whatsapp">
+                            </i>
+                            <strong>Điện thoại:</strong>
+                            <span>0916446984</span>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope">
+                            </i>
+                            <strong>Email:</strong>
+                            <span>nphi172@gmail.com</span>
+                        </li>
+                        <li>
+                            <i class="far fa-clock">
+                            </i>
+                            <strong>Thời gian làm việc:</strong>
+                            <span>Tất cả các ngày trong tuần / 9:00 AM - 8:00 PM</span>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </footer>
@@ -144,5 +175,18 @@
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
     <script src="~/Scripts/bootstrap.min.js"></script>
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+        (function () {
+            var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+            s1.async = true;
+            s1.src = 'https://embed.tawk.to/60fc247a649e0a0a5ccdc1d3/1fbcesvq9';
+            s1.charset = 'UTF-8';
+            s1.setAttribute('crossorigin', '*');
+            s0.parentNode.insertBefore(s1, s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 </body>
 </html>

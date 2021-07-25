@@ -1,20 +1,4 @@
-﻿
-@{
-    ViewBag.Title = "About";
-    Layout = "~/Views/Shared/_LayoutUser.cshtml";
-}
-
-<h2>Liên Hệ</h2>
-<div class="contact-right col-xs-6">
-    <div id="map"></div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVmkDHBddblHbba9VGV24Yu032wCb0uc4&callback=initMap&libraries=places&v=weekly"
-            async></script>
-            <script src="~/Scripts/Map.js"></script>
-            <link rel="stylesheet" href="~/Content/Map.css">
-</div>
-<script>
-
-    let map;
+let map;
     let service;
     let infowindow;
 
@@ -52,7 +36,3 @@
             infowindow.open(map);
         });
     }
-
-</script>
-
-
