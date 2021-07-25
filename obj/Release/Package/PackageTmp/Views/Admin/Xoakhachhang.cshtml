@@ -1,0 +1,79 @@
+﻿@model WebAnime.Models.KhachHang
+
+@{
+    ViewBag.Title = "Xoakhachhang";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>XÁC NHẬN THÔNG TIN KHÁCH HÀNG CẦN XÓA</h2>
+
+<div>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            Họ và tên:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.HoTen)
+        </dd>
+
+        <dt>
+            Tài Khoản:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Taikhoan)
+        </dd>
+
+        <dt>
+            Mật khẩu:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Matkhau)
+        </dd>
+
+        <dt>
+            Email:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Email)
+        </dd>
+
+        <dt>
+            Địa chỉ:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DiachiKH)
+        </dd>
+
+        <dt>
+            Điện thoại:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DienthoaiKH)
+        </dd>
+
+        <dt>
+            Ngày sinh:
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Ngaysinh)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Xóa" class="btn btn-default" /> |
+            @Html.ActionLink("VỀ TRANG QUẢN LÝ TÀI KHOẢN KHÁCH HÀNG", "KhachHang")
+        </div>
+    }
+</div>

@@ -23,7 +23,7 @@
         <tr style="text-align:center; font-weight:bold">
             <td> @item.iMamohinh </td>
             <td> @item.sTenmohinh</td>
-            <td><img src="~/images/@item.sAnhbia"></td>
+            <td><img src="~/@item.sAnhbia" width="100"/> </td>
             @using (Html.BeginForm("CapnhatGiohang", "Giohang", new { @iMaSp = item.iMamohinh }))
             {
                 <td>
@@ -33,6 +33,7 @@
                 <td>@String.Format("{0:0,0}", item.dThanhtien) </td>
                 <td> <a href="@Url.Action("Details", "AnimeFiguresShop", new { id = item.iMamohinh})"> Chi tiết </a></td>
                 <td> @Html.ActionLink("Xóa", "XoaGiohang", new { @iMaSp = item.iMamohinh })</td>
+
                 <td> <input type="submit" value="Cập Nhật" /></td>
             }
         </tr>

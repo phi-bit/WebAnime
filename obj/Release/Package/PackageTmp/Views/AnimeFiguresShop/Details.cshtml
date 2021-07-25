@@ -28,7 +28,7 @@
 <h3>Tên mô hình: @Model.Tenmohinh </h3>
 <div>
     <div style="width:40%; float:left; border-left: dotted 1px; border-color:azure">
-        <img src="~/@Model.Anhbia" width="100%" />
+        <img src="~/@Model.Anhbia" width="100" />
     </div>
     <div style="width:60%; float:left; padding:10px">
         <h4 style="font-weight:bold; color:red">Tên mô hình: @Model.Tenmohinh </h4>
@@ -37,7 +37,7 @@
     </div>
     <div>
         <div id="Datmua">
-            <a href="@Url.Action("ThemGiohang", "GioHang", new { @iMamohinh= @Model.Mamohinh })" class="list-group-item">
+            <a href="@Url.Action("ThemGiohang", "GioHang", new { id = @Model.Mamohinh, @strURL=Request.Url.ToString() })" class="list-group-item">
                 ĐẶT MUA
             </a>
         </div>

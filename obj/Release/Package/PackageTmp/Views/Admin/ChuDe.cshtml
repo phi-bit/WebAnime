@@ -1,0 +1,32 @@
+﻿@model IEnumerable<WebAnime.Models.ChuDe>
+@{
+    ViewBag.Title = "ChuDe";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Thông Tin Chủ Đề</h2>
+
+<p>
+    @Html.ActionLink("THÊM MỚI", "Themmoichude")
+</p>
+<table class="table">
+    <tr>
+        <th>  Tên chủ đề </th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Tenchude)
+            </td>
+            <td>
+                @Html.ActionLink("Sửa", "Suachude", new { id = item.MaCD }) |
+                @Html.ActionLink("Chi tiết", "Chitietchude", new { id = item.MaCD }) |
+                @Html.ActionLink("Xóa", "Xoachude", new { id = item.MaCD })
+            </td>
+        </tr>
+    }
+
+</table>
+
